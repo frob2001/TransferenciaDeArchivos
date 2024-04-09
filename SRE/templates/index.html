@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Registro de Empleados</title>
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+    <a href="/descargar-csv">Descargar como CSV</a> <!-- Enlace para descargar el CSV -->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Cargo</th>
+            <th>Horas de Trabajo Mensuales</th>
+        </tr>
+        {% for empleado in empleados %}
+        <tr>
+            <td>{{ empleado.nombre }}</td>
+            <td>{{ empleado.telefono }}</td>
+            <td>{{ empleado.cargo }}</td>
+            <td>{{ empleado.horas_trabajo }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

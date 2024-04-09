@@ -1,0 +1,37 @@
+/* TablaSalarios.css */
+body, html {
+    height: 100%; /* Aseguramos que el html y el body tomen toda la altura */
+    margin: 0;
+  }
+
+  h1{
+    color: black;
+  }
+  
+  .tabla-salarios-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Altura completa de la ventana gráfica */
+  }
+  
+  .titulo-sistema-nomina {
+    margin-left: 2rem; /* Ajusta según necesidades */
+    margin-top: 1rem; /* Ajusta según necesidades */
+    font-size: 24px; /* Ajusta según necesidades */
+  }
+  
+  .upload-container {
+    margin: 1rem auto; /* Espacio arriba y abajo y centrado horizontalmente */
+  }
+  
+  .datatable-fullscreen .p-datatable {
+    height: calc(100vh - 100px); /* Ajusta el 100px según la altura de tus otros elementos */
+    width: 100%;
+    overflow: auto;
+  }
+  
+  /* Asegúrate de que los elementos dentro de DataTable no excedan su contenedor */
+  .p-datatable .p-datatable-wrapper {
+    max-height: 100%;
+  }
+  
