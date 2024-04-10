@@ -27,3 +27,4 @@ with open(nombre_archivo_local, 'rb') as archivo:
         print("Archivo subido con éxito.")
     except Exception as e:
         print(f"Error al subir el archivo: {e}")
+
